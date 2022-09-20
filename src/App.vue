@@ -3,26 +3,44 @@
 </script>
 
 <template>
-  <header>
-    <div class="nav">
-      <img alt="Parrot logo" class="logo" src="./assets/img/logo.svg"/>
-      <nav class="navbar" id="navegation menu">
-      </nav>
-    </div>   
-  </header>
+  <div class="page">
+      <header>
+      <div class="nav">
+        <img alt="Parrot logo" class="logo" src="./assets/img/logo.svg"/>
+        <nav class="navbar" id="navegation menu">
+        </nav>
+      </div>   
+    </header>
 
-  <section class="landing">
-    <figure class="landing--svg">
-      <img class="landing--logo" src="./assets/img/logoLanding.svg" alt="landingLogo">
-    </figure>
-    <div class="landing__content">
-      <h2 class="landing--h2">Welcome to</h2>
-      <h1 class="landing--h1">Parrot Games</h1>
-      <p class="landing--text">Parrot Games is a video game distribution company with a social component, 
-        where our users can interact with others, criticize and review their favorite video games.</p>
-    </div>
-  </section>
+    <section class="landing">
+      <figure class="landing--svg">
+        <img class="landing--logo" src="./assets/img/logoLanding.svg" alt="landingLogo">
+      </figure>
+      <div class="landing__content">
+        <h2 class="landing--h2">Welcome to</h2>
+        <h1 class="landing--h1">Parrot Games</h1>
+        <p class="landing--text">Parrot Games is a video game distribution company with a social component, 
+          where our users can interact with others, criticize and review their favorite video games.</p>
+      </div>
+    </section>
 
+    <section class="item">
+      <div class="item__container">
+        <figure class="item--shop">
+          <img src="./assets/img/shopItem.png" alt="shopItem">
+          <p class="item--text">Buy video games and support your favorite development.</p>
+        </figure>
+        <figure class="item--shop">
+          <img src="./assets/img/communityItem.png" alt="communityItem">
+          <p class="item--text">Socializate with another people that share your passions.</p>
+        </figure>
+        <figure class="item--shop">
+          <img src="./assets/img/createGameItem.png" alt="createGameItem">
+          <p class="item--text">Create a developer profile and publish your games to the public.</p>
+        </figure>
+      </div>
+    </section>
+  </div>
   <main>
     <TheWelcome />
   </main>
@@ -39,6 +57,11 @@
 
 body{
   margin: 0;
+}
+
+.page{
+  width: 100%;
+  font-family: satoshi;
 }
 
 .nav {
@@ -108,7 +131,36 @@ body{
     font-size: 1.3em;
     padding: 10px 50px;
   }
+}
 
+.item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  padding: 100px; 
+
+  &__container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 100px;
+    
+  }
+
+  &--shop{
+    width: 25%;
+    text-align: center;
+    margin: 50px;
+  }
+
+  &--text{
+    padding: 30px;
+    font-size: 1.3em;
+  }
 }
 
 </style>
