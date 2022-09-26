@@ -59,6 +59,11 @@
       <button class="community__btn">More forums</button></div>
       </div>
   </section>
+  <section>
+    <div class="owngame">
+      <button class="owngame--button">Public your own game</button>
+    </div>
+  </section>
 </template>
 
 <style lang="scss">
@@ -117,62 +122,80 @@
       
     }
 
-  .community__content{
-    margin: 28px;
-  }
+    .community__content{
+      margin: 28px;
+    }
 
-  .community__figcation{
-    bottom: 95px;
-    background: $blue;
-    border-end-start-radius: 25px;
-    border-end-end-radius: 25px;
-    padding: 29px 50px;
+    .community__figcation{
+      bottom: 95px;
+      background: $blue;
+      border-end-start-radius: 25px;
+      border-end-end-radius: 25px;
+      padding: 29px 50px;
 
-  }
+    }
 
-  .community__fig{
-    margin-top: -95px;
-  }
+    .community__fig{
+      margin-top: -95px;
+    }
 
-  .community__Buton{
-    width: 12%;
-    margin: 70px;
-    margin-top: -50px;
-    padding: 25px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    border-radius: 55px;
-    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.25);
-    background: $blue2;
-  }
+    .community__Buton{
+      width: 12%;
+      margin: 70px;
+      margin-top: -50px;
+      padding: 25px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      border-radius: 55px;
+      box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.25);
+      background: $blue2;
+    }
 
-  .comunity--img{
-    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.25);
-  }
+    .comunity--img{
+      box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.25);
+    }
 
-  .community--text{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-    &--p{
-      font-size: 1.3em;
+    .community--text{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+      &--p{
+        font-size: 1.3em;
+      }
+    }
+
+    .community__btn{
+      font-family: satoshi;
+      font-weight: normal;
+      color: white;
+      background: $blue2;
+      font-size: 1.4em;
+      border: none;
+      outline: none;
     }
   }
 
-  .community__btn{
-    font-family: satoshi;
-    font-weight: normal;
-    color: white;
-    background: $blue2;
-    font-size: 1.4em;
-    border: none;
-    outline: none;
-  }
-  
-  
+  .owngame{
+    background-image: url(../assets/img/collagegames.png);
+    background-repeat: no-repeat;
+    text-align: center;
 
+    &--button{
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      color: white;
+      background-color: $blue2;
+      font-size: 1.4em;
+      border-radius: 35px;
+      margin: 410px;
+      padding: 20px 40px;
+      border: none;
+      outline: none;
+      box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.25);
+    }
   }
 
 </style>

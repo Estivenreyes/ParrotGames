@@ -1,5 +1,6 @@
 <script setup>
   import Mainforum from './components/Mainforum.vue'
+  import shop from './components/pages/shop.vue'
 </script>
 
 <template>
@@ -27,7 +28,8 @@
     <section class="item">
       <div class="item__container">
         <figure class="item--shop">
-          <img src="./assets/img/shopItem.png" alt="shopItem">
+          <a href="./components/pages/shop.vue">
+            <img src="./assets/img/shopItem.png" alt="shopItem"></a>
           <p class="item--text">Buy video games and support your favorite development.</p>
         </figure>
         <figure class="item--shop">
